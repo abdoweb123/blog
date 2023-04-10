@@ -7,6 +7,7 @@
         .card-body , img{
             border: 1px solid #ddd;
             box-shadow: 5px 3px 10px #ddd;
+            padding: 10px !important;
         }
         .make_comment{
             display: none;
@@ -62,7 +63,7 @@
                 @foreach($post->comments as $comment)
                     <div class="card-body mb-2">
                         <p class="card-text">
-                            <a href="#">{{$comment->user->name}}</a>
+                            <a href="#">{{$comment->user->name}} - {{$comment->user->id}}</a>
                         </p>
                         <p>{{$comment->content}}</p>
                         <div class="d-flex justify-content-between align-items-center">
