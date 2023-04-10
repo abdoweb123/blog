@@ -63,7 +63,7 @@
                 @foreach($post->comments as $comment)
                     <div class="card-body mb-2">
                         <p class="card-text">
-                            <a href="#">{{$comment->user->name}} - {{$comment->user->id}}</a>
+                            <a href="#">{{$comment->user->name}}</a>
                         </p>
                         <p>{{$comment->content}}</p>
                         <div class="d-flex justify-content-between align-items-center">
